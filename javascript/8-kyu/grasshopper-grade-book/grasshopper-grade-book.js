@@ -1,15 +1,20 @@
 function getGrade (s1, s2, s3) {
-  // Code here
-  const score = (s1 + s2 + s3) / 3;
-  if (90 <= score && score <= 100) {
-    return 'A';
-  } else if (80 <= score && score < 90) {
-    return 'B';
-  } else if (70 <= score && score < 80) {
-    return 'C';
-  } else if (60 <= score && score < 70) {
-    return 'D';
-  } else {
-    return 'F';
+  let avg = (s1 + s2 + s3) / 3;
+  switch(true) {
+      case (avg >= 90):
+        return 'A';
+        break;
+      case (avg >= 80):
+        return 'B';
+        break;
+      case (avg >= 70):
+        return 'C';
+        break;
+      case (avg >= 60):
+        return 'D';
+        break;
+      default:
+        return 'F';
+        break;
   }
 }
