@@ -1,13 +1,11 @@
 function fakeBin(x){
-  xArr = Array.from(x);
-  fakeBinary = [];
-  for (let i = 0; i < xArr.length; i++) {
+  fakeString = "";
+  for (let i = 0; i < x.length; i++) {
     if (x[i] < 5) {
-      fakeBinary.push('0')
+      fakeString += '0';
     } else {
-      fakeBinary.push('1')
+      fakeString += 1;
     }
   }
-  fakeString = fakeBinary.join("");
   return fakeString;
 }
