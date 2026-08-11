@@ -1,9 +1,6 @@
 def well(x):
     #your code here
-    count_good = x.count('good')
-    if count_good == 1 or count_good == 2:
-        return 'Publish!'
-    elif count_good > 2:
-        return 'I smell a series!'
+    if 'good' in x:
+        return 'I smell a series!' if x.count('good') > 2 else 'Publish!'
     else:
         return 'Fail!'
