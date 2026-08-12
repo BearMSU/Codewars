@@ -1,28 +1,27 @@
 function switchItUp(number){
 //Write your own Code!
-  switch (true) {
-    case number === 0:
-      return "Zero";
-    case number === 1:
-      return "One";
-    case number === 2:
-      return "Two";
-    case number === 3:
-      return "Three";
-    case number === 4:
-      return "Four";
-    case number === 5:
-      return "Five";
-    case number === 6:
-      return "Six";
-    case number === 7:
-      return "Seven";
-    case number === 8:
-      return "Eight";
-    case number === 9:
-      return "Nine";
-    default:
-      return "Number not in range"
+  switch (number) {
+      case 0:
+        return 'Zero';
+      case 1:
+        return 'One';
+      case 2:
+        return 'Two';
+      case 3:
+        return 'Three';
+      case 4:
+        return 'Four';
+      case 5:
+        return 'Five';
+      case 6:
+        return 'Six';
+      case 7:
+        return 'Seven';
+      case 8:
+        return 'Eight';
+      case 9:
+        return 'Nine';
+      default:
+        'Number not in range'
   }
-​
 }
