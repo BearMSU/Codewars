@@ -1,3 +1,3 @@
 def maps(a):
     pass
-    return [2 * n for n in a]
+    return list(map(lambda n: n * 2, a))
