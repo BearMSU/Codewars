@@ -1,6 +1,6 @@
 def count_sheep(n):
     # your code
-    string = ""
+    sheep_string = ""
     for sheep in range(1, n + 1):
-        string += f"{sheep} sheep...".replace("\n", "")
-    return string
+        sheep_string += f"{sheep} sheep...".replace("\n", "")
+    return sheep_string
