@@ -1,8 +1,8 @@
 var countSheep = function (num){
   //your code here
-  let string = "";
-  for (let i = 1; i <= num; i++){
-      string += `${i} sheep...`.replaceAll("\n", "");
+  let sheepString = "";
+  for (let i = 1; i <= num; i++) {
+    sheepString += `${i} sheep...`.replace("\n", "");
   }
-  return string;
+  return sheepString;
 }
