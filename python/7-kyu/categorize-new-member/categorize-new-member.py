@@ -1,8 +1,2 @@
 def open_or_senior(data):
-    membership = []
-    for person in data:
-        if person[0] >= 55 and person[1] > 7:
-            membership.append('Senior')
-        else:
-            membership.append('Open')
-    return membership
+    return ['Senior' if age >= 55 and handicap > 7 else 'Open' for (age, handicap) in data]
